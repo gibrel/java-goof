@@ -1,10 +1,13 @@
 name: Hello World
 
-on: workflow_dispatch
+on: push
 
 jobs:
   helloworld:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World!"
+      - run: uname -a
+      - run: id
+      - run: env
 
