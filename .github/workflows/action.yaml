@@ -1,8 +1,10 @@
 name: Nuclei Scan
 
-on:
-  push:
-    branches: ["main"]
+# on:
+#   push:
+#     branches: ["main"]
+
+on: workflow_dispatch
 
 jobs:
   helloworld:
