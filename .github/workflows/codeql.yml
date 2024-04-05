@@ -11,13 +11,14 @@
 #
 name: "CodeQL"
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  schedule:
-    - cron: '38 3 * * 4'
+on: workflow_dispatch
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+#   schedule:
+#     - cron: '38 3 * * 4'
 
 jobs:
   analyze:
